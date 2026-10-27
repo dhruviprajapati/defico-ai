@@ -9,7 +9,7 @@ import connectDB from "./config/db.js";
 import ingestRoutes from "./domains/ingest/ingestRoutes.js";
 import "./workers/ingestWorker.js";
 
-import AppError from "./utils/AppError.js";
+import AppError from "./core/AppError.js";
 import errorHandler from "./middleware/errorHandler.js";
 
 dotenv.config();
