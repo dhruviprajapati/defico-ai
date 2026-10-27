@@ -6,10 +6,9 @@ import cors from "cors";
 
 import logger from "./core/logger.js";
 import connectDB from "./config/db.js";
+import AppError from "./core/AppError.js";
 import ingestRoutes from "./domains/ingest/ingestRoutes.js";
 import "./workers/ingestWorker.js";
-
-import AppError from "./core/AppError.js";
 import errorHandler from "./middleware/errorHandler.js";
 
 dotenv.config();
